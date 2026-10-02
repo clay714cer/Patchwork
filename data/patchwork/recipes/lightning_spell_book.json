@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ECL",
+    "CDA",
+    "LAM"
+  ],
+  "key": {
+    "D": { "item": "irons_spellbooks:diamond_spell_book" },
+    "A": { "item": "irons_spellbooks:arcane_ingot" },
+    "L": { "item": "irons_spellbooks:lightning_bottle" },
+    "M": { "item": "irons_spellbooks:magic_cloth" },
+    "C": { "item": "minecraft:copper_ingot" },
+    "E": { "item": "irons_spellbooks:energized_core" }
+  },
+  "result": {
+    "item": "patchwork:lightning_spell_book"
+  }
+}

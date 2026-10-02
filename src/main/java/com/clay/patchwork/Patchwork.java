@@ -1,10 +1,10 @@
 package com.clay.patchwork;
 
 import com.mojang.logging.LogUtils;
+import io.redspace.ironsspellbooks.api.spells.SpellRarity;
 import io.redspace.ironsspellbooks.item.SpellBook;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.Rarity;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -24,7 +24,7 @@ public class Patchwork {
         DeferredRegister.create(ForgeRegistries.ITEMS, MODID);
 
     public static final RegistryObject<Item> LIGHTNING_SPELL_BOOK = ITEMS.register("lightning_spell_book",
-        () -> new SpellBook(12, new Item.Properties().stacksTo(1).rarity(Rarity.EPIC).fireResistant()));
+        () -> new SpellBook(12, SpellRarity.EPIC));
 
     public Patchwork() {
         IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
